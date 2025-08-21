@@ -9,7 +9,7 @@ stages {
   stage('test') {
     steps {
       script {
-         if(fileExists 'index.html') {
+         if (fileExists ('index.html')) {
             echo 'Le fichier HTML existe bien...'
           } else {
              echo 'Le fichier est manquant...'
